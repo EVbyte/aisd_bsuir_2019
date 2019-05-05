@@ -9,8 +9,7 @@
 #include "bs_tree.hpp"
 #include "vector"
 int main(int argc, const char * argv[]) {
-    BS_tree<int> tree({-345, 2, 2234, 9, 5});
-    tree.Insert({123,-432432, -43543543, 2340});
+    BS_tree<int> tree({1, -1, 3, -10, 0, 2, 4});
     tree.inOrder();
     std ::cout << std::endl;
     
@@ -21,6 +20,14 @@ int main(int argc, const char * argv[]) {
     
     for(bs_node<int>* node = tree.maxNode(); node; node = tree.predecessor(node))
         std ::cout << node -> key << " ";
+    
+    std ::cout << std::endl;
+    tree.Remove(1);
+    tree.inOrder();
+    
+    std ::cout << std::endl;
+    tree.Remove(2234);
+    tree.inOrder();
     
     return 0;
 }

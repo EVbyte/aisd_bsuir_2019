@@ -64,6 +64,48 @@ void BS_tree<T>::InsertRec(bs_node<T>* node, T key){
     }
 }
 
+//удаление
+template<typename T>
+void BS_tree<T>::Remove(T key){
+    RemoveRec(Root, key);
+}
+
+template<typename T>
+void BS_tree<T>::RemoveRec(bs_node<T>* node, T key){
+    if (!node) return;
+    else if (key > node -> key)
+        RemoveRec(node -> right, key);
+    else if (key < node -> key)
+        RemoveRec(node -> left, key);
+    else if (node -> left && node -> right){
+        node -> key = minNodeRec(node -> right) -> key;
+        RemoveRec(node -> right, node -> key);
+    }
+    else if (node -> left){
+        bs_node<T>* del = node;
+        if (node -> parent -> left == node)
+            node -> parent -> left = node -> left;
+        else
+            node -> parent -> right = node -> left;
+        delete del;
+    }
+    else if (node -> right){
+        bs_node<T>* del = node;
+        if (node -> parent -> left == node)
+            node -> parent -> left = node -> right;
+        else
+            node -> parent -> right = node -> right;
+        delete del;
+    }
+    else {
+        bs_node<T>* del = node;
+        if (node -> parent -> left == node)
+            node -> parent -> left = nullptr;
+        else
+            node -> parent -> right = nullptr;
+        delete del;
+    }
+}
 //поиск
 template<typename T>
 bool BS_tree<T>::Find(T key){
@@ -74,9 +116,9 @@ bool BS_tree<T>::FindRec(bs_node<T>* node, T key){
     if (node -> key == key)
         return true;
     if (key > node -> key && node -> right)
-        FindRec(node -> right, key);
+        return FindRec(node -> right, key);
     if (key < node -> key && node -> left)
-        FindRec(node -> left, key);
+        return FindRec(node -> left, key);
     return false;
 }
 

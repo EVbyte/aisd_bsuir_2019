@@ -44,7 +44,9 @@
 		33CA5742227EED4E00EFCBC9 = {
 			isa = PBXGroup;
 			children = (
-				33CA574D227EED4E00EFCBC9 /* avl_tree */,
+				33CA574E227EED4E00EFCBC9 /* main.cpp */,
+				33CA575B227EF21B00EFCBC9 /* bs_tree.cpp */,
+				33CA575C227EF21B00EFCBC9 /* bs_tree.hpp */,
 				33CA574C227EED4E00EFCBC9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,16 +57,6 @@
 				33CA574B227EED4E00EFCBC9 /* avl_tree */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		33CA574D227EED4E00EFCBC9 /* avl_tree */ = {
-			isa = PBXGroup;
-			children = (
-				33CA574E227EED4E00EFCBC9 /* main.cpp */,
-				33CA575B227EF21B00EFCBC9 /* bs_tree.cpp */,
-				33CA575C227EF21B00EFCBC9 /* bs_tree.hpp */,
-			);
-			path = avl_tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
