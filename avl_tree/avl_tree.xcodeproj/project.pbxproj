@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		330F22FC228027180069BDBC /* avl_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 330F22FA228027180069BDBC /* avl_tree.cpp */; };
 		33CA574F227EED4E00EFCBC9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CA574E227EED4E00EFCBC9 /* main.cpp */; };
-		33CA575D227EF21B00EFCBC9 /* bs_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CA575B227EF21B00EFCBC9 /* bs_tree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +28,6 @@
 		330F22FB228027180069BDBC /* avl_tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = avl_tree.hpp; sourceTree = "<group>"; };
 		33CA574B227EED4E00EFCBC9 /* avl_tree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = avl_tree; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CA574E227EED4E00EFCBC9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		33CA575B227EF21B00EFCBC9 /* bs_tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bs_tree.cpp; sourceTree = "<group>"; };
-		33CA575C227EF21B00EFCBC9 /* bs_tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bs_tree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +47,6 @@
 				330F22FA228027180069BDBC /* avl_tree.cpp */,
 				330F22FB228027180069BDBC /* avl_tree.hpp */,
 				33CA574E227EED4E00EFCBC9 /* main.cpp */,
-				33CA575B227EF21B00EFCBC9 /* bs_tree.cpp */,
-				33CA575C227EF21B00EFCBC9 /* bs_tree.hpp */,
 				33CA574C227EED4E00EFCBC9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,7 +117,6 @@
 			files = (
 				33CA574F227EED4E00EFCBC9 /* main.cpp in Sources */,
 				330F22FC228027180069BDBC /* avl_tree.cpp in Sources */,
-				33CA575D227EF21B00EFCBC9 /* bs_tree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

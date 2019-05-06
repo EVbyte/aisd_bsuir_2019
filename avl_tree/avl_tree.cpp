@@ -8,6 +8,8 @@
 
 #include "avl_tree.hpp"
 #include <iostream>
+
+//конструкторы
 template<typename T>
 AVL_tree<T>::AVL_tree(){
     Root = nullptr;
@@ -64,8 +66,9 @@ void AVL_tree<T>::InsertRec(avl_node<T>* node, T key){
 
 template<typename T>
 void AVL_tree<T>::changeNodeToBalanced(avl_node<T>* node){
+    if (!Root) return;
     avl_node<T>* parent = node -> parent;
-    avl_node<T>* newNode = makeBalanced(node);;
+    avl_node<T>* newNode = makeBalanced(node);
     if (parent && parent -> right == node){
         parent -> right = newNode;
         return;
@@ -79,7 +82,6 @@ void AVL_tree<T>::changeNodeToBalanced(avl_node<T>* node){
 }
 
 // удаление
-
 template<typename T>
 void AVL_tree<T>::Remove(T key){
     RemoveRec(Root, key);
@@ -100,7 +102,6 @@ void AVL_tree<T>::RemoveRec(avl_node<T>* node, T key){
     else if (node -> left || node -> right)
         RemoveNodeWithOneLeaf(node);
     else RemoveLeaf(node);
-    
     changeNodeToBalanced(node);
 }
 
@@ -124,7 +125,7 @@ void AVL_tree<T>::RemoveNodeWithOneLeaf(avl_node<T>* node){
         }
         delete del;
     }
-    else if (node -> right){
+    else{
         if (!node -> parent) {
             Root = node -> right;
             Root -> parent = nullptr;
@@ -174,7 +175,6 @@ bool AVL_tree<T>::FindRec(avl_node<T>* node, T key){
     return false;
 }
 
-
 //обходы
 template<typename T>
 void AVL_tree<T>::inOrder(){
@@ -192,7 +192,9 @@ void AVL_tree<T>::inOrderRec(avl_node<T>* node){
 
 template<typename T>
 avl_node<T>* AVL_tree<T>::minNode(){
-    return minNodeRec(Root);
+    if (Root)
+        return minNodeRec(Root);
+    return nullptr;
 }
 
 template<typename T>
@@ -202,7 +204,9 @@ avl_node<T>* AVL_tree<T>::minNodeRec(avl_node<T>* node){
 
 template<typename T>
 avl_node<T>* AVL_tree<T>::maxNode(){
-    return maxNodeRec(Root);
+    if (Root)
+        return maxNodeRec(Root);
+    return nullptr;
 }
 
 template<typename T>
@@ -286,6 +290,11 @@ avl_node<T>* AVL_tree<T>::rotateL(avl_node<T>* node){
 template<typename T>
 unsigned char AVL_tree<T>::height(avl_node<T>* node){
     return node ? node -> height : 0;
+}
+    
+template<typename T>
+int AVL_tree<T>::GetHeight(){
+    return height(Root);
 }
 
 template<typename T>

@@ -29,39 +29,47 @@ template <typename T>
 class AVL_tree{
 private:
     avl_node<T>* Root;
+    //
     void InsertRec(avl_node<T>* node, T key);
     void RemoveRec(avl_node<T>* node, T key);
     void RemoveLeaf(avl_node<T>* node);
     void RemoveNodeWithOneLeaf(avl_node<T>* node);
-    void inOrderRec(avl_node<T>* node);
     bool FindRec(avl_node<T>* node, T key);
+    //
+    void inOrderRec(avl_node<T>* node);
+    void printRec(avl_node<T>* node, int level);
+    //
     avl_node<T>* minNodeRec(avl_node<T>* node);
     avl_node<T>* maxNodeRec(avl_node<T>* node);
+    //
     avl_node<T>* makeBalanced(avl_node<T>* node);
     avl_node<T>* rotateL(avl_node<T>* node);
     avl_node<T>* rotateR(avl_node<T>* node);
-    avl_node<T>* rotateLR(avl_node<T>* node);
-    avl_node<T>* rotateRL(avl_node<T>* node);
+    //
     unsigned char height (avl_node<T>* node);
     int balanceFactor (avl_node<T>* node);
     void setHeight (avl_node<T>* node);
     bool isBalanced (avl_node<T>* node);
     void changeNodeToBalanced(avl_node<T>* node);
-    void printRec(avl_node<T>* node, int level);
 public:
     AVL_tree<T>();
     AVL_tree<T>(std::vector<T> keys);
+    //
     void Insert(T key);
     void Insert(std::vector<T> keys);
+    //
     void Remove(T key);
-    void inOrder();
+    //
     bool Find(T key);
+    //
+    void inOrder();
     void Print();
+    //
     avl_node<T>* minNode();
     avl_node<T>* maxNode();
     avl_node<T>* successor(avl_node<T>* node);
     avl_node<T>* predecessor(avl_node<T>* node);
-    
+    int GetHeight();
 };
 
 #endif /* avl_tree_hpp */
