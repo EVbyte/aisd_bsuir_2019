@@ -1,22 +1,20 @@
 //
-//  bs_tree.cpp
+//  avl_tree.cpp
 //  avl_tree
 //
-//  Created by Eduard Adasko on 5/5/19.
+//  Created by Eduard Adasko on 5/6/19.
 //  Copyright © 2019 Eduard Adasko. All rights reserved.
 //
 
-#include "bs_tree.hpp"
+#include "avl_tree.hpp"
 #include <iostream>
-
-//конструкторы
 template<typename T>
-BS_tree<T>::BS_tree(){
+AVL_tree<T>::AVL_tree(){
     Root = nullptr;
 }
 
 template<typename T>
-BS_tree<T>::BS_tree(std::vector<T> keys){
+AVL_tree<T>::AVL_tree(std::vector<T> keys){
     Root = nullptr;
     for (int i = 0; i < keys.size(); i++)
         Insert(keys[i]);
@@ -24,9 +22,9 @@ BS_tree<T>::BS_tree(std::vector<T> keys){
 
 //вставка
 template<typename T>
-void BS_tree<T>::Insert(T key){
+void AVL_tree<T>::Insert(T key){
     if (!Root){
-        bs_node<T> *n = new bs_node<T>(key);
+        avl_node<T> *n = new avl_node<T>(key);
         Root = n;
         return;
     }
@@ -35,18 +33,18 @@ void BS_tree<T>::Insert(T key){
 }
 
 template<typename T>
-void BS_tree<T>::Insert(std::vector<T> keys){
+void AVL_tree<T>::Insert(std::vector<T> keys){
     for (int i = 0; i < keys.size(); i++)
         Insert(keys[i]);
 }
 
 template<typename T>
-void BS_tree<T>::InsertRec(bs_node<T>* node, T key){
+void AVL_tree<T>::InsertRec(avl_node<T>* node, T key){
     if (key > node -> key){
         if(node -> right)
             InsertRec(node -> right, key);
         else{
-            bs_node<T> *n = new bs_node<T>(key);
+            avl_node<T> *n = new avl_node<T>(key);
             node -> right = n;
             n -> parent = node;
         }
@@ -55,21 +53,40 @@ void BS_tree<T>::InsertRec(bs_node<T>* node, T key){
         if(node -> left)
             InsertRec(node -> left, key);
         else{
-            bs_node<T> *n = new bs_node<T>(key);
+            avl_node<T> *n = new avl_node<T>(key);
             node -> left = n;
             n -> parent = node;
         }
     }
+    changeNodeToBalanced(node);
+    return;
 }
 
-//удаление
 template<typename T>
-void BS_tree<T>::Remove(T key){
+void AVL_tree<T>::changeNodeToBalanced(avl_node<T>* node){
+    avl_node<T>* parent = node -> parent;
+    avl_node<T>* newNode = makeBalanced(node);;
+    if (parent && parent -> right == node){
+        parent -> right = newNode;
+        return;
+    }
+    if (parent && parent -> left == node){
+        parent -> left = newNode;
+        return;
+    }
+    Root = newNode;
+    return;
+}
+
+// удаление
+
+template<typename T>
+void AVL_tree<T>::Remove(T key){
     RemoveRec(Root, key);
 }
 
 template<typename T>
-void BS_tree<T>::RemoveRec(bs_node<T>* node, T key){
+void AVL_tree<T>::RemoveRec(avl_node<T>* node, T key){
     if (!node) return;
     if (key > node -> key)
         RemoveRec(node -> right, key);
@@ -78,15 +95,18 @@ void BS_tree<T>::RemoveRec(bs_node<T>* node, T key){
     else if (node -> left && node -> right){
         node -> key = minNodeRec(node -> right) -> key;
         RemoveRec(node -> right, node -> key);
+        changeNodeToBalanced(node);
     }
     else if (node -> left || node -> right)
         RemoveNodeWithOneLeaf(node);
     else RemoveLeaf(node);
+    
+    changeNodeToBalanced(node);
 }
 
 template<typename T>
-void BS_tree<T>::RemoveNodeWithOneLeaf(bs_node<T>* node){
-    bs_node<T>* del = node;
+void AVL_tree<T>::RemoveNodeWithOneLeaf(avl_node<T>* node){
+    avl_node<T>* del = node;
     if (node -> left){
         if (!node -> parent) {
             Root = node -> left;
@@ -124,8 +144,8 @@ void BS_tree<T>::RemoveNodeWithOneLeaf(bs_node<T>* node){
 }
 
 template<typename T>
-void BS_tree<T>::RemoveLeaf(bs_node<T>* node){
-    bs_node<T>* del = node;
+void AVL_tree<T>::RemoveLeaf(avl_node<T>* node){
+    avl_node<T>* del = node;
     if (!node -> parent){
         Root = nullptr;
         delete del;
@@ -138,14 +158,13 @@ void BS_tree<T>::RemoveLeaf(bs_node<T>* node){
     delete del;
 }
 
-
 //поиск
 template<typename T>
-bool BS_tree<T>::Find(T key){
+bool AVL_tree<T>::Find(T key){
     return FindRec(Root, key);
 }
 template<typename T>
-bool BS_tree<T>::FindRec(bs_node<T>* node, T key){
+bool AVL_tree<T>::FindRec(avl_node<T>* node, T key){
     if (node -> key == key)
         return true;
     if (key > node -> key && node -> right)
@@ -155,14 +174,15 @@ bool BS_tree<T>::FindRec(bs_node<T>* node, T key){
     return false;
 }
 
+
 //обходы
 template<typename T>
-void BS_tree<T>::inOrder(){
+void AVL_tree<T>::inOrder(){
     inOrderRec(Root);
 }
 
 template<typename T>
-void BS_tree<T>::inOrderRec(bs_node<T>* node){
+void AVL_tree<T>::inOrderRec(avl_node<T>* node){
     if (node){
         inOrderRec(node -> left);
         std::cout << node -> key << " ";
@@ -171,30 +191,30 @@ void BS_tree<T>::inOrderRec(bs_node<T>* node){
 }
 
 template<typename T>
-bs_node<T>* BS_tree<T>::minNode(){
+avl_node<T>* AVL_tree<T>::minNode(){
     return minNodeRec(Root);
 }
 
 template<typename T>
-bs_node<T>* BS_tree<T>::minNodeRec(bs_node<T>* node){
+avl_node<T>* AVL_tree<T>::minNodeRec(avl_node<T>* node){
     return node -> left ? minNodeRec(node -> left) : node;
 }
 
 template<typename T>
-bs_node<T>* BS_tree<T>::maxNode(){
+avl_node<T>* AVL_tree<T>::maxNode(){
     return maxNodeRec(Root);
 }
 
 template<typename T>
-bs_node<T>* BS_tree<T>::maxNodeRec(bs_node<T>* node){
+avl_node<T>* AVL_tree<T>::maxNodeRec(avl_node<T>* node){
     return node -> right ? minNodeRec(node -> right) : node;
 }
 
 template<typename T>
-bs_node<T>* BS_tree<T>::successor(bs_node<T>* node){
+avl_node<T>* AVL_tree<T>::successor(avl_node<T>* node){
     if (node -> right)
         return minNodeRec(node -> right);
-    bs_node<T>* p = node->parent;
+    avl_node<T>* p = node->parent;
     while (p && node == p -> right){
         node = p;
         p = p -> parent;
@@ -203,10 +223,10 @@ bs_node<T>* BS_tree<T>::successor(bs_node<T>* node){
 }
 
 template<typename T>
-bs_node<T>* BS_tree<T>::predecessor(bs_node<T>* node){
+avl_node<T>* AVL_tree<T>::predecessor(avl_node<T>* node){
     if (node -> left)
         return maxNodeRec(node -> left);
-    bs_node<T>* p = node->parent;
+    avl_node<T>* p = node->parent;
     while (p && node == p -> left){
         node = p;
         p = p -> parent;
@@ -214,8 +234,79 @@ bs_node<T>* BS_tree<T>::predecessor(bs_node<T>* node){
     return p;
 }
 
+//вращения
+template<typename T>
+avl_node<T>* AVL_tree<T>::makeBalanced(avl_node<T>* node){
+    setHeight(node);
+    if (balanceFactor(node) == 2){
+        if (balanceFactor(node -> right) < 0)
+            node -> right = rotateR(node -> right);
+        return rotateL(node);
+    }
+    
+    if (balanceFactor(node) == -2){
+        if (balanceFactor(node -> left) > 0)
+            node -> left = rotateL(node -> left);
+        return rotateR(node);
+    }
+    return node;
+}
+
+template<typename T>
+avl_node<T>* AVL_tree<T>::rotateR(avl_node<T>* node){
+    avl_node<T>* parent = node -> parent;
+    avl_node<T>* q = node -> left;
+    if (q && q -> right)
+        q -> right -> parent = node;
+    node -> left = q -> right;
+    node -> parent = q;
+    q -> right = node;
+    q -> parent = parent;
+    setHeight(node);
+    setHeight(q);
+    return q;
+}
+
+template<typename T>
+avl_node<T>* AVL_tree<T>::rotateL(avl_node<T>* node){
+    avl_node<T>* parent = node -> parent;
+    avl_node<T>* q = node -> right;
+    if (q && q -> left)
+        q -> left -> parent = node;
+    node -> right = q -> left;
+    node -> parent = q;
+    q -> left = node;
+    q -> parent = parent;
+    setHeight(node);
+    setHeight(q);
+    return q;
+}
+
+
+template<typename T>
+unsigned char AVL_tree<T>::height(avl_node<T>* node){
+    return node ? node -> height : 0;
+}
+
+template<typename T>
+int AVL_tree<T>::balanceFactor(avl_node<T>* node){
+    return height(node -> right) - height(node -> left);
+}
+
+template<typename T>
+void AVL_tree<T>::setHeight(avl_node<T>* node){
+    unsigned char hl = height(node->left);
+    unsigned char hr = height(node->right);
+    node -> height = (hl > hr ? hl : hr) + 1;
+}
+
+template<typename T>
+bool AVL_tree<T>::isBalanced(avl_node<T>* node){
+    return abs(balanceFactor(node)) <= 1;
+}
+
 template <typename T>
-void BS_tree<T>::printRec(bs_node<T>* p, int level){
+void AVL_tree<T>::printRec(avl_node<T>* p, int level){
     if(p)
     {
         printRec(p->left,level + 1);
@@ -226,12 +317,11 @@ void BS_tree<T>::printRec(bs_node<T>* p, int level){
 }
 
 template <typename T>
-void BS_tree<T>::Print(){
+void AVL_tree<T>::Print(){
     printRec(Root, 0);
 }
-//
-template class BS_tree<int>;
-template class BS_tree<double>;
-template class BS_tree<float>;
-template class BS_tree<char>;
-template class BS_tree<std::string>;
+template class AVL_tree<int>;
+template class AVL_tree<double>;
+template class AVL_tree<float>;
+template class AVL_tree<char>;
+template class AVL_tree<std::string>;

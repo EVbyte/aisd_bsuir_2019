@@ -32,6 +32,9 @@ private:
     bool FindRec(bs_node<T>* node, T key);
     bs_node<T>* minNodeRec(bs_node<T>* node);
     bs_node<T>* maxNodeRec(bs_node<T>* node);
+    void RemoveLeaf(bs_node<T>* node);
+    void RemoveNodeWithOneLeaf(bs_node<T>* node);
+    void printRec(bs_node<T>* node, int level);
 public:
     BS_tree<T>();
     BS_tree<T>(std::vector<T> keys);
@@ -40,6 +43,7 @@ public:
     void Remove(T key);
     void inOrder();
     bool Find(T key);
+    void Print();
     bs_node<T>* minNode();
     bs_node<T>* maxNode();
     bs_node<T>* successor(bs_node<T>* node);

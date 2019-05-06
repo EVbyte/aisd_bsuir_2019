@@ -876,5 +876,842 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.192791"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "makeBalanced(avl_node&lt;T&gt;* node)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::makeBalanced(avl_node&lt;int&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833916.850783"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::makeBalanced(avl_node&lt;double&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833916.8611341"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::makeBalanced(avl_node&lt;float&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833916.867847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::makeBalanced(avl_node&lt;char&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833916.8743531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::makeBalanced(avl_node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833916.881174"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.193428"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "InsertRec(avl_node&lt;T&gt;* node, T key)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::InsertRec(avl_node&lt;int&gt;*, int)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835736.999066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::InsertRec(avl_node&lt;double&gt;*, double)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.0053411"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::InsertRec(avl_node&lt;float&gt;*, float)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.0097359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::InsertRec(avl_node&lt;char&gt;*, char)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.0151269"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::InsertRec(avl_node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;*, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.019459"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.193873"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "Insert(T key)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::Insert(int)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835141.224763"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::Insert(double)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835141.226884"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::Insert(float)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835141.229606"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::Insert(char)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835141.233477"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::Insert(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835141.236403"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.194258"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "rotateR(avl_node&lt;T&gt;* node)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::rotateR(avl_node&lt;int&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.098561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::rotateR(avl_node&lt;double&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.109359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::rotateR(avl_node&lt;float&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.115499"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::rotateR(avl_node&lt;char&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.121691"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::rotateR(avl_node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.127815"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.194772"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
+            landmarkName = "rotateL(avl_node&lt;T&gt;* node)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::rotateL(avl_node&lt;int&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.15087"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::rotateL(avl_node&lt;double&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.155665"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::rotateL(avl_node&lt;float&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.160551"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::rotateL(avl_node&lt;char&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.1672781"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::rotateL(avl_node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578833917.183274"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.195555"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "makeBalanced(avl_node&lt;T&gt;* node)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::makeBalanced(avl_node&lt;int&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.875177"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::makeBalanced(avl_node&lt;double&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.881286"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::makeBalanced(avl_node&lt;float&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.886753"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::makeBalanced(avl_node&lt;char&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.890939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::makeBalanced(avl_node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.894178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.196365"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "makeBalanced(avl_node&lt;T&gt;* node)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::makeBalanced(avl_node&lt;int&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.909616"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::makeBalanced(avl_node&lt;double&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.912123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::makeBalanced(avl_node&lt;float&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.914934"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::makeBalanced(avl_node&lt;char&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.917802"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::makeBalanced(avl_node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835799.921304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "190">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "avl_tree.cpp"
+            timestampString = "578840581.196802"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "AVL_tree(std::vector&lt;T&gt; keys)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;int&gt;::AVL_tree(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.134382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;double&gt;::AVL_tree(std::__1::vector&lt;double, std::__1::allocator&lt;double&gt; &gt;)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.137243"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;float&gt;::AVL_tree(std::__1::vector&lt;float, std::__1::allocator&lt;float&gt; &gt;)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.141235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;char&gt;::AVL_tree(std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt;)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.144048"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVL_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::AVL_tree(std::__1::vector&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt; &gt;)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/avl_tree.cpp"
+                  timestampString = "578835737.148868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "bs_tree.cpp"
+            timestampString = "578840581.197228"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "RemoveLeaf(bs_node&lt;T&gt;* node)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BS_tree&lt;int&gt;::RemoveLeaf(bs_node&lt;int&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/bs_tree.cpp"
+                  timestampString = "578840581.501766"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BS_tree&lt;double&gt;::RemoveLeaf(bs_node&lt;double&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/bs_tree.cpp"
+                  timestampString = "578840581.505127"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BS_tree&lt;float&gt;::RemoveLeaf(bs_node&lt;float&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/bs_tree.cpp"
+                  timestampString = "578840581.508339"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BS_tree&lt;char&gt;::RemoveLeaf(bs_node&lt;char&gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/bs_tree.cpp"
+                  timestampString = "578840581.511899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BS_tree&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::RemoveLeaf(bs_node&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;*)"
+                  moduleName = "avl_tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edadasko/aisd_bsuir_2019/avl_tree/bs_tree.cpp"
+                  timestampString = "578840581.519807"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
