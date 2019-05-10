@@ -32,9 +32,12 @@ private:
     //
     void InsertRec(avl_node<T>* node, T key);
     void RemoveRec(avl_node<T>* node, T key);
-    void RemoveLeaf(avl_node<T>* node);
-    void RemoveNodeWithOneLeaf(avl_node<T>* node);
+    void RemoveLeaf(avl_node<T>*& node);
+    void RemoveNodeWithOneLeaf(avl_node<T>*& node);
     bool FindRec(avl_node<T>* node, T key);
+    long long sizeRec(avl_node<T>* node);
+    T minRec(avl_node<T>* node);
+    T maxRec(avl_node<T>* node);
     //
     void inOrderRec(avl_node<T>* node);
     void printRec(avl_node<T>* node, int level);
@@ -62,7 +65,11 @@ public:
     //
     bool Find(T key);
     //
+    T min();
+    T max();
+    T rootElement();
     void inOrder();
+    long long size();
     void Print();
     //
     avl_node<T>* minNode();

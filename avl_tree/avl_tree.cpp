@@ -64,23 +64,6 @@ void AVL_tree<T>::InsertRec(avl_node<T>* node, T key){
     return;
 }
 
-template<typename T>
-void AVL_tree<T>::changeNodeToBalanced(avl_node<T>* node){
-    if (!Root) return;
-    avl_node<T>* parent = node -> parent;
-    avl_node<T>* newNode = makeBalanced(node);
-    if (parent && parent -> right == node){
-        parent -> right = newNode;
-        return;
-    }
-    if (parent && parent -> left == node){
-        parent -> left = newNode;
-        return;
-    }
-    Root = newNode;
-    return;
-}
-
 // удаление
 template<typename T>
 void AVL_tree<T>::Remove(T key){
@@ -97,7 +80,6 @@ void AVL_tree<T>::RemoveRec(avl_node<T>* node, T key){
     else if (node -> left && node -> right){
         node -> key = minNodeRec(node -> right) -> key;
         RemoveRec(node -> right, node -> key);
-        changeNodeToBalanced(node);
     }
     else if (node -> left || node -> right)
         RemoveNodeWithOneLeaf(node);
@@ -106,13 +88,14 @@ void AVL_tree<T>::RemoveRec(avl_node<T>* node, T key){
 }
 
 template<typename T>
-void AVL_tree<T>::RemoveNodeWithOneLeaf(avl_node<T>* node){
+void AVL_tree<T>::RemoveNodeWithOneLeaf(avl_node<T>*& node){
     avl_node<T>* del = node;
     if (node -> left){
         if (!node -> parent) {
             Root = node -> left;
             Root -> parent = nullptr;
             delete del;
+            node = Root;
             return;
         }
         if (node -> parent -> left == node){
@@ -130,6 +113,7 @@ void AVL_tree<T>::RemoveNodeWithOneLeaf(avl_node<T>* node){
             Root = node -> right;
             Root -> parent = nullptr;
             delete del;
+            node = Root;
             return;
         }
         if (node -> parent -> left == node){
@@ -145,11 +129,12 @@ void AVL_tree<T>::RemoveNodeWithOneLeaf(avl_node<T>* node){
 }
 
 template<typename T>
-void AVL_tree<T>::RemoveLeaf(avl_node<T>* node){
+void AVL_tree<T>::RemoveLeaf(avl_node<T>*& node){
     avl_node<T>* del = node;
     if (!node -> parent){
         Root = nullptr;
         delete del;
+        node = nullptr;
         return;
     }
     if (node -> parent -> left == node)
@@ -191,6 +176,18 @@ void AVL_tree<T>::inOrderRec(avl_node<T>* node){
 }
 
 template<typename T>
+long long AVL_tree<T>::size(){
+    return sizeRec(Root);
+}
+
+template<typename T>
+long long AVL_tree<T>::sizeRec(avl_node<T>* node){
+    if (!node)
+        return 0;
+    return sizeRec(node -> left) + sizeRec(node -> right) + 1;
+}
+
+template<typename T>
 avl_node<T>* AVL_tree<T>::minNode(){
     if (Root)
         return minNodeRec(Root);
@@ -211,7 +208,26 @@ avl_node<T>* AVL_tree<T>::maxNode(){
 
 template<typename T>
 avl_node<T>* AVL_tree<T>::maxNodeRec(avl_node<T>* node){
-    return node -> right ? minNodeRec(node -> right) : node;
+    return node -> right ? maxNodeRec(node -> right) : node;
+}
+
+template<typename T>
+T AVL_tree<T>::min(){
+    return minRec(Root);
+}
+
+template<typename T>
+T AVL_tree<T>::minRec(avl_node<T>* node){
+    return node -> left ? minRec(node -> left) : node -> key;
+}
+
+template<typename T>
+T AVL_tree<T>::max(){
+    return maxRec(Root);
+}
+template<typename T>
+T AVL_tree<T>::maxRec(avl_node<T>* node){
+    return node -> right ? maxRec(node -> right) : node -> key;
 }
 
 template<typename T>
@@ -254,6 +270,23 @@ avl_node<T>* AVL_tree<T>::makeBalanced(avl_node<T>* node){
         return rotateR(node);
     }
     return node;
+}
+
+template<typename T>
+void AVL_tree<T>::changeNodeToBalanced(avl_node<T>* node){
+    if (!Root) return;
+    avl_node<T>* parent = node -> parent;
+    avl_node<T>* newNode = makeBalanced(node);
+    if (parent && parent -> right == node){
+        parent -> right = newNode;
+        return;
+    }
+    if (parent && parent -> left == node){
+        parent -> left = newNode;
+        return;
+    }
+    Root = newNode;
+    return;
 }
 
 template<typename T>
@@ -327,8 +360,15 @@ void AVL_tree<T>::printRec(avl_node<T>* p, int level){
 
 template <typename T>
 void AVL_tree<T>::Print(){
+    std::cout << "Высота: " << GetHeight() << std::endl;
     printRec(Root, 0);
 }
+
+template <typename T>
+T AVL_tree<T>::rootElement(){
+    return Root -> key;
+}
+
 template class AVL_tree<int>;
 template class AVL_tree<double>;
 template class AVL_tree<float>;
