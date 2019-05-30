@@ -9,7 +9,6 @@
 #include "avl_tree.hpp"
 #include <iostream>
 
-//конструкторы
 template<typename T>
 AVL_tree<T>::AVL_tree(){
     Root = nullptr;
@@ -22,7 +21,6 @@ AVL_tree<T>::AVL_tree(std::vector<T> keys){
         Insert(keys[i]);
 }
 
-//вставка
 template<typename T>
 void AVL_tree<T>::Insert(T key){
     if (!Root){
@@ -64,7 +62,6 @@ void AVL_tree<T>::InsertRec(avl_node<T>* node, T key){
     return;
 }
 
-// удаление
 template<typename T>
 void AVL_tree<T>::Remove(T key){
     RemoveRec(Root, key);
@@ -78,7 +75,7 @@ void AVL_tree<T>::RemoveRec(avl_node<T>* node, T key){
     else if (key < node -> key)
         RemoveRec(node -> left, key);
     else if (node -> left && node -> right){
-        node -> key = minNodeRec(node -> right) -> key;
+        node -> key = successor(node) -> key;
         RemoveRec(node -> right, node -> key);
     }
     else if (node -> left || node -> right)
@@ -144,7 +141,6 @@ void AVL_tree<T>::RemoveLeaf(avl_node<T>*& node){
     delete del;
 }
 
-//поиск
 template<typename T>
 bool AVL_tree<T>::Find(T key){
     return FindRec(Root, key);
@@ -160,7 +156,6 @@ bool AVL_tree<T>::FindRec(avl_node<T>* node, T key){
     return false;
 }
 
-//обходы
 template<typename T>
 void AVL_tree<T>::inOrder(){
     inOrderRec(Root);
@@ -254,7 +249,6 @@ avl_node<T>* AVL_tree<T>::predecessor(avl_node<T>* node){
     return p;
 }
 
-//вращения
 template<typename T>
 avl_node<T>* AVL_tree<T>::makeBalanced(avl_node<T>* node){
     setHeight(node);
@@ -348,20 +342,20 @@ bool AVL_tree<T>::isBalanced(avl_node<T>* node){
 }
 
 template <typename T>
+void AVL_tree<T>::Print(){
+    std::cout << "Высота: " << GetHeight() << std::endl;
+    printRec(Root, 0);
+}
+
+template <typename T>
 void AVL_tree<T>::printRec(avl_node<T>* p, int level){
     if(p)
     {
         printRec(p->left,level + 1);
-        for(int i = 0;i< level;i++) std::cout<<"   ";
+        for(int i = 0; i < level; i++) std::cout<<"   ";
         std::cout << p->key << std::endl;
         printRec(p->right,level + 1);
     }
-}
-
-template <typename T>
-void AVL_tree<T>::Print(){
-    std::cout << "Высота: " << GetHeight() << std::endl;
-    printRec(Root, 0);
 }
 
 template <typename T>
