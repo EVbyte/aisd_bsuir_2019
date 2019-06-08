@@ -899,12 +899,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331236"
+            timestampString = "581694403.396724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
             endingLineNumber = "67"
-            landmarkName = "Remove(T key)"
+            landmarkName = "remove(T key)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -992,12 +992,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331306"
+            timestampString = "581694403.396796"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
             endingLineNumber = "71"
-            landmarkName = "RemoveRec(avl_node&lt;T&gt;* node, T key)"
+            landmarkName = "removeRec(avl_node&lt;T&gt;* node, T key)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -1085,12 +1085,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331355"
+            timestampString = "581694403.39685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "130"
             endingLineNumber = "130"
-            landmarkName = "RemoveLeaf(avl_node&lt;T&gt;*&amp; node)"
+            landmarkName = "removeLeaf(avl_node&lt;T&gt;*&amp; node)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -1178,12 +1178,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331401"
+            timestampString = "581694403.396898"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "RemoveRec(avl_node&lt;T&gt;* node, T key)"
+            landmarkName = "removeRec(avl_node&lt;T&gt;* node, T key)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1194,7 +1194,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331447"
+            timestampString = "581694403.396942"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "180"
@@ -1287,7 +1287,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.3314919"
+            timestampString = "581694403.396984"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "181"
@@ -1380,12 +1380,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.3315361"
+            timestampString = "581694403.397027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
-            landmarkName = "RemoveRec(avl_node&lt;T&gt;* node, T key)"
+            landmarkName = "removeRec(avl_node&lt;T&gt;* node, T key)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -1473,12 +1473,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331579"
+            timestampString = "581694403.397069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
-            landmarkName = "RemoveRec(avl_node&lt;T&gt;* node, T key)"
+            landmarkName = "removeRec(avl_node&lt;T&gt;* node, T key)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -1566,12 +1566,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331622"
+            timestampString = "581694403.397109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89"
-            landmarkName = "RemoveNodeWithOneLeaf(avl_node&lt;T&gt;*&amp; node)"
+            landmarkName = "removeNodeWithOneLeaf(avl_node&lt;T&gt;*&amp; node)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -1659,7 +1659,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331665"
+            timestampString = "581694403.397148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "272"
@@ -1752,7 +1752,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331708"
+            timestampString = "581694403.397187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "255"
@@ -1845,12 +1845,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.3317519"
+            timestampString = "581694403.397226"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "Insert(T key)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "insert(T key)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -1938,12 +1938,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331818"
+            timestampString = "581694403.397265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
-            landmarkName = "RemoveNodeWithOneLeaf(avl_node&lt;T&gt;*&amp; node)"
+            landmarkName = "removeNodeWithOneLeaf(avl_node&lt;T&gt;*&amp; node)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -2031,12 +2031,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.3319"
+            timestampString = "581694403.3973041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
             endingLineNumber = "84"
-            landmarkName = "RemoveRec(avl_node&lt;T&gt;* node, T key)"
+            landmarkName = "removeRec(avl_node&lt;T&gt;* node, T key)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -2124,12 +2124,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.331969"
+            timestampString = "581694403.397344"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "RemoveRec(avl_node&lt;T&gt;* node, T key)"
+            landmarkName = "removeRec(avl_node&lt;T&gt;* node, T key)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -2217,7 +2217,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.332016"
+            timestampString = "581694403.397383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "199"
@@ -2310,7 +2310,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "avl_tree.cpp"
-            timestampString = "580417738.332057"
+            timestampString = "581694403.397422"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "206"
